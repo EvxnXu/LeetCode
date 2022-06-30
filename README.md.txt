@@ -1,1 +1,0 @@
-Solutions + important things to note from own solutions to leetcode problems :)
