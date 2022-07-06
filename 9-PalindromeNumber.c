@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 bool isPalindrome(int x){
     //if number is negative, then false
@@ -11,11 +12,11 @@ bool isPalindrome(int x){
         
     if(x == 0)
     {
-        return TRUE;
+        return true;
     }
     if(x < 0 || x % 10 == 0)
     {
-        return FALSE;
+        return false;
     }
     
     int y = 0;
@@ -28,11 +29,11 @@ bool isPalindrome(int x){
     
     if(x == y || x == y/10)
     {
-        return TRUE;
+        return true;
     }
     else
     {
-        return FALSE;
+        return false;
     }
     
     //single digit: 5 --> 0 5 --> 0 == 5/10 --> 0 == 0 (TRUE)
